@@ -774,7 +774,7 @@ Cross Stitch: Good for finishing hems and front-facing embroidery.</string>
         <!--SEW SUSTAINABLE-->
         <scene sceneID="vdh-84-d11">
             <objects>
-                <viewController id="2qq-rr-KJa" customClass="ViewController" customModule="slideoutbartest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="2qq-rr-KJa" customClass="ViewController" customModule="SewSustainable" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bd-Rd-0jg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -817,6 +817,9 @@ Cross Stitch: Good for finishing hems and front-facing embroidery.</string>
                                             <fontDescription key="titleFontDescription" name="Avenir-Book" family="Avenir" pointSize="25"/>
                                             <color key="baseForegroundColor" red="0.9249565005" green="0.98635929820000001" blue="0.82742822169999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="zOL-Ga-r7c" kind="show" id="hgF-th-FXI"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.26277661320000001" green="0.40152144429999997" blue="0.2666460276" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -867,13 +870,138 @@ Cross Stitch: Good for finishing hems and front-facing embroidery.</string>
             </objects>
             <point key="canvasLocation" x="92.753623188405811" y="97.767857142857139"/>
         </scene>
+        <!--View Controller4-->
+        <scene sceneID="EeQ-3h-VjV">
+            <objects>
+                <viewController id="zOL-Ga-r7c" customClass="ViewController4" customModule="SewSustainable" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ulM-dl-JJL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nwa-oG-T2o">
+                                <rect key="frame" x="47" y="98" width="320" height="39"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Facts About Fast Fashion">
+                                        <attributes>
+                                            <font key="NSFont" size="30" name="MarkerFelt-Wide"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UIL-pj-kYx">
+                                <rect key="frame" x="60" y="168" width="301" height="204"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="204" id="2JU-WX-Bga"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Most fast fashion brands will employ influencers and celebrities to promote their brand. These influencers unknowingly push trendy items at a low price. This attracts their young and impressionable audiences to buy as many pieces as they can from a website without knowing the ethics and how these clothes are made.</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="16" name=".SFNS-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0RL-rh-ISJ">
+                                <rect key="frame" x="58" y="341" width="309" height="207"/>
+                                <string key="text">Although clothing production is the third largest manuafacturing industry - right behind automotive and tech - garment workers are still bery much udnerpaid by big fast fashion companies. 93% of fast fashion brands aren't paying their workers fairly. 80% of the labor force in the fashion industry are women. Many of these ewomen come from India, China, Bangladesh, etc. Most do not make enough to support themselves or their families.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" name=".SFNS-Regular" family=".AppleSystemUIFont" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W22-zJ-56Z">
+                                <rect key="frame" x="147" y="765" width="124" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Click for facts">
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="Baskerville"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseBackgroundColor" systemColor="systemBrownColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="clickFactsButton:" destination="zOL-Ga-r7c" eventType="touchUpInside" id="a0t-pg-1My"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2V7-Jw-m1X">
+                                <rect key="frame" x="77" y="548" width="260" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="zkJ-8c-f1u"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">For the average American, 7-=80 pounds of clothing and textile is thrown away each year. 1 out of 3 women consider clothing they've worn once or twice to be old.</string>
+                                        <attributes>
+                                            <color key="NSColor" systemColor="labelColor"/>
+                                            <font key="NSFont" metaFont="system" size="17"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="St7-RQ-QgO"/>
+                        <color key="backgroundColor" red="0.90201457884549097" green="0.98089760541915894" blue="0.77053667166062301" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="nwa-oG-T2o" firstAttribute="top" secondItem="St7-RQ-QgO" secondAttribute="top" constant="10" id="7O5-YR-cxw"/>
+                            <constraint firstItem="0RL-rh-ISJ" firstAttribute="trailing" secondItem="nwa-oG-T2o" secondAttribute="trailing" id="9Dr-Df-PkF"/>
+                            <constraint firstItem="St7-RQ-QgO" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="nwa-oG-T2o" secondAttribute="trailing" id="BEi-ug-t1k"/>
+                            <constraint firstItem="UIL-pj-kYx" firstAttribute="centerX" secondItem="nwa-oG-T2o" secondAttribute="centerX" constant="3.5" id="HFT-Ah-m0H"/>
+                            <constraint firstItem="2V7-Jw-m1X" firstAttribute="top" secondItem="0RL-rh-ISJ" secondAttribute="bottom" id="IBO-TR-yOR"/>
+                            <constraint firstItem="St7-RQ-QgO" firstAttribute="trailing" secondItem="2V7-Jw-m1X" secondAttribute="trailing" constant="77" id="MiJ-ZT-hmr"/>
+                            <constraint firstItem="0RL-rh-ISJ" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="nwa-oG-T2o" secondAttribute="trailing" id="Pcb-j2-2mY"/>
+                            <constraint firstItem="W22-zJ-56Z" firstAttribute="top" secondItem="2V7-Jw-m1X" secondAttribute="bottom" constant="89" id="RIW-gz-nID"/>
+                            <constraint firstItem="St7-RQ-QgO" firstAttribute="trailing" secondItem="0RL-rh-ISJ" secondAttribute="trailing" constant="47" id="RwF-Ok-ST5"/>
+                            <constraint firstItem="2V7-Jw-m1X" firstAttribute="top" secondItem="0RL-rh-ISJ" secondAttribute="bottom" id="SJA-GV-ZNy"/>
+                            <constraint firstItem="0RL-rh-ISJ" firstAttribute="top" secondItem="UIL-pj-kYx" secondAttribute="bottom" constant="-31" id="TA5-nV-90C"/>
+                            <constraint firstItem="UIL-pj-kYx" firstAttribute="leading" secondItem="St7-RQ-QgO" secondAttribute="leading" constant="60" id="WiX-9d-q92"/>
+                            <constraint firstItem="St7-RQ-QgO" firstAttribute="bottom" secondItem="W22-zJ-56Z" secondAttribute="bottom" constant="62" id="c9r-4I-PqH"/>
+                            <constraint firstItem="2V7-Jw-m1X" firstAttribute="leading" secondItem="St7-RQ-QgO" secondAttribute="leading" constant="77" id="fTy-qv-n1H"/>
+                            <constraint firstItem="2V7-Jw-m1X" firstAttribute="leading" secondItem="St7-RQ-QgO" secondAttribute="leading" constant="77" id="fXT-lL-mh8"/>
+                            <constraint firstItem="St7-RQ-QgO" firstAttribute="trailing" secondItem="W22-zJ-56Z" secondAttribute="trailing" constant="143" id="gS5-AJ-khk"/>
+                            <constraint firstItem="UIL-pj-kYx" firstAttribute="top" secondItem="nwa-oG-T2o" secondAttribute="bottom" constant="31" id="hDF-WY-3Vv"/>
+                            <constraint firstItem="UIL-pj-kYx" firstAttribute="top" secondItem="nwa-oG-T2o" secondAttribute="bottom" constant="31" id="pEN-dk-XrR"/>
+                            <constraint firstItem="nwa-oG-T2o" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="St7-RQ-QgO" secondAttribute="leading" id="qYx-SV-58R"/>
+                            <constraint firstItem="St7-RQ-QgO" firstAttribute="trailing" secondItem="2V7-Jw-m1X" secondAttribute="trailing" constant="77" id="rWw-Zg-dFF"/>
+                            <constraint firstItem="0RL-rh-ISJ" firstAttribute="leading" secondItem="St7-RQ-QgO" secondAttribute="leading" constant="58" id="rjV-lF-2nh"/>
+                            <constraint firstItem="W22-zJ-56Z" firstAttribute="leading" secondItem="St7-RQ-QgO" secondAttribute="leading" constant="147" id="skN-Av-YNT"/>
+                            <constraint firstItem="UIL-pj-kYx" firstAttribute="leading" secondItem="St7-RQ-QgO" secondAttribute="leading" constant="60" id="xNK-gn-DsS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="UuB-LO-SPd"/>
+                    <connections>
+                        <outlet property="factText1" destination="UIL-pj-kYx" id="S2i-kO-Swy"/>
+                        <outlet property="factText2" destination="0RL-rh-ISJ" id="9Te-cl-RHS"/>
+                        <outlet property="factText3" destination="2V7-Jw-m1X" id="mL8-ZN-2qv"/>
+                        <outlet property="titleLabel" destination="nwa-oG-T2o" id="Z2S-64-Fsr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a9v-cf-2xz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="85.507246376811594" y="801.5625"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Untitled design (35)" width="2000" height="286"/>
         <image name="Untitled design (36)" width="900" height="900"/>
         <image name="icons8-menu-30" width="30" height="30"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
